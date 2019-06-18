@@ -236,3 +236,16 @@ ato via terminal :
 npm config set proxy http://10.70.152.132:8080
 npm config set https-proxy http://10.70.152.132:8080
 
+git eclipse to github:
+create project, new-Class(optional),klik kanan-team, Disconnect,
+klik kanan-team, Share Project, uncheck-Use or Create repository,
+Create, pilih : D:\PROJECT\gitOk_toGithub, Finish.
+lihat di project (gitOk_toGithub master), klik kanan-team, Disconnect,
+klik kanan-team, Share Project, check-Use or Create repository, check-pilih titik 1 (.), Finish.
+klik kanan-team, commit, di box unstaged changed, tekan +/ ++ (semua), isi commit message, commit and push.
+buat repository github 1 project 1 repository- gitOk_toGithub.
+isi URI : https://github.com/wanto82/gitOk_toGithub.git, Next, Next, finish
+git github to eclipse:
+File, import, Git-Project from Git, Clone URI, isi URI: https://github.com/wanto82/gitOk_toGithub.git, Next, 
+isi Directory: D:\PROJECT\gitOk_toGithub, pilih Import existingEclip project, 
+Working Tree - D:\PROJECT\gitOk_toGithub, Next, Finish.
