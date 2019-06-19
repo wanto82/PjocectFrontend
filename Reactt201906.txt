@@ -1,1 +1,3 @@
-okkkk TEEEST
+https://www.techandstartup.com/tutorials/worlds-simplest-redux-with-apis-example
+
+https://www.techandstartup.com/tutorials/react-redux-crud-app
