@@ -1,5 +1,3 @@
-bbbbbb
-
 vs code:
 ANGULAR STEP :
 1. npm install -g @angular/cli
