@@ -14,6 +14,11 @@ REACT STEP :
    npm start
 http://localhost:3000
 
+REDUX STEP :
+1. npm install --save redux react-redux redux-thunk axios or yarn add redux react-redux redux-thunk axios
+2. npm i --save redux-logger
+3. npm start
+
 
 TEST Internet Connection di terminal:
 ping www.google.com
@@ -207,6 +212,9 @@ git add file.txt
 git status
 git commit -m "Delete file.txt"
 git push -u origin master
+
+search plugin STS Eclipse plugin di eclipse :
+STS Eclipse plugin
 
 extension vs code react : 
 ES7 React/Redux/GraphQL/React-Native snippets
