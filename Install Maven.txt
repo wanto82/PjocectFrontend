@@ -1,0 +1,15 @@
+1. download maven https://maven.apache.org/download.cgi.
+2. copy di C:\Program Files\apache-maven-3.6.1\bin
+3. setting di System, Advanced System settings, Environment Variabels, System variables, pilih Path,Edit, 
+New isi : C:\Program Files\apache-maven-3.6.1\bin
+4. buka cmd: mvn -verions
+5. masuk path file jar : D:\PROJECT\Lib 
+6. paste : mvn install:install-file -Dfile=ojdbc7.jar -DgroupId=com.oracle -DartifactId=ojdbc7 -Dversion=12.2.0.1 -Dpackaging=jar
+7. lihat hasil : C:\Users\Adit\.m2\repository\com\oracle\ojdbc7\12.2.0.1\ojdbc7-12.2.0.1.pom
+8. sesuaikan dengan versi di pom.xml : 12.2.0.1
+
+<dependency>
+			<groupId>com.oracle</groupId>
+			<artifactId>ojdbc7</artifactId>
+			<version>12.2.0.1</version>
+		</dependency>
