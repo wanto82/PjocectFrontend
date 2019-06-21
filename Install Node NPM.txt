@@ -198,6 +198,7 @@ git init
 git add * ato git add . or git add --all
 git add file.txt
 git add nama_folder
+git add nama_folder/
 git status
 git commit -m "commit ke 1"
 git remote add origin https://github.com/wanto82/PjocectFrontend.git
