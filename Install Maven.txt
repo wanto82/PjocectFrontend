@@ -13,3 +13,10 @@ New isi : C:\Program Files\apache-maven-3.6.1\bin
 			<artifactId>ojdbc7</artifactId>
 			<version>12.2.0.1</version>
 		</dependency>
+
+create jar :
+1. cmd
+2. masuk folder project, SET JAVA_HOME=C:\Program Files\Java\jdk1.8.0_181
+3. mvn clean install
+4. terbentuk jar di : D:\RepositoriesGitBackend\reactHello01\target
+5. java -jar project.jar
