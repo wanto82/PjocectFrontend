@@ -3,26 +3,25 @@ import { connect } from 'react-redux';
 import axios from 'axios';
 
 class App extends Component {
-  // componentDidMount() {
-  //   this.props.getUsers();
-  // }
-// 
-  // render() {
-  //   const user = this.props.user;
-  //   return (
-  //     <div>
-  //       <h1>Reddit ReactJS Posts</h1>
-  //       {<ul>
-  //         {this.props.users.map((user) =>
-  //           <li>{user.email}</li>
-  //         )}
+//   componentDidMount() {
+//     this.props.getUsers();
+//   }
 
-  //       </ul>}
-  //     </div>
-  //   );
-  // }
+//   render() {
+//     return (
+//       <div>
+//         <h1>Reddit ReactJS Posts</h1>
+//         {<ul>
+//           {this.props.users.map((user) =>
+//             <li>{user.email}</li>
+//           )}
 
-  // const receiveUsers = (json) => ({
+//         </ul>}
+//       </div>
+//     );
+//   }
+
+//   const receiveUsers = (json) => ({
 //   type: 'RECEIVE_POSTS',
 //   users: json.data.map(child => child),
 // });
@@ -53,19 +52,20 @@ class App extends Component {
     return (
       <div>
         <h1>Reddit ReactJS Posts</h1>
-        
+        <h2>{user.id_user}: {user.email}</h2>
       </div>
     );
   }
 }
 
 const getUser = (id) => {
-  console.log("response.iddddd", id);
+  let url='users';
+  console.log("response.iddddd", id+' '+url);
   return (dispatch) => {
-    return axios.get('http://localhost:8080/users/222')
+    return axios.get('http://localhost:8080/'+url+'/'+id)
       .then(response => {
         console.log("response.data", response);
-        dispatch({type: 'GET_USER', user: response});
+        dispatch({type: 'GET_USER', user: response.data});
       })
       .catch(error => {
         throw (error);
@@ -74,8 +74,8 @@ const getUser = (id) => {
 };
 
 // const mapStateToProps = (state) => ({ users: state.users });
+// const mapDispatchToProps = { getUsers };
 const mapStateToProps = (state) => ({ user: state.user });
-
 const mapDispatchToProps = { getUser };
 
 export default connect(mapStateToProps, mapDispatchToProps)(App);
