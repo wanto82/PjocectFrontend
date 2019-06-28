@@ -17,7 +17,8 @@ http://localhost:3000
 REDUX STEP :
 1. npm install --save redux react-redux redux-thunk axios or yarn add redux react-redux redux-thunk axios
 2. npm i --save redux-logger
-3. npm start
+3. npm install --save redux react-redux redux-thunk redux-logger react-router-dom axios
+4. npm start
 
 
 TEST Internet Connection di terminal:
