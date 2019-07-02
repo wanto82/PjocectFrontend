@@ -11,7 +11,8 @@ class UserAdd extends React.Component {
 
     handleSubmit = (event) => {
         event.preventDefault();
-        console.log("ooo.." + this.state.email);
+        console.log("email.." + this.state.email);
+        console.log("firstName.." + this.state.firstName);
         this.props.addUser(this.state);
     };
 
