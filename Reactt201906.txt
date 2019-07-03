@@ -5,3 +5,5 @@ https://www.techandstartup.com/tutorials/react-redux-crud-app
 https://www.springboottutorial.com/creating-spring-boot-project-with-eclipse-and-maven
 
 https://ashiknesin.com/blog/upload-file-using-axios-and-redux-form/
+
+https://github.com/axios/axios/blob/master/examples/upload/index.html
