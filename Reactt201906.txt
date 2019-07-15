@@ -7,3 +7,19 @@ https://www.springboottutorial.com/creating-spring-boot-project-with-eclipse-and
 https://ashiknesin.com/blog/upload-file-using-axios-and-redux-form/
 
 https://github.com/axios/axios/blob/master/examples/upload/index.html
+
+export const updateUser = (userUpload) => {
+  const userId = user.id_user;
+  return (dispatch) => {
+    return axios.put(`${apiUrl}/users/upload`, userUpload)
+      .then(response => {
+        const data = response.data;
+        dispatch({ type: UPDATE_USER, payload: { id_user: data.id_user, email: data.email, firstName: data.firstName } })
+        dispatch({ type: REPLACE_USER, payload: { id_user: data.id_user, email: data.email, firstName: data.firstName } })
+      })
+      .then(() => {
+        history.push(`/upload`)
+      })
+      .catch(error => { throw (error) });
+  };
+};
