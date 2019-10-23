@@ -30,6 +30,10 @@ cmd:
 set http_proxy=http://10.70.152.132:8080
 netsh winhttp set proxy proxy-server="socks=10.70.152.132:8080" bypass-list="localhost"
 
+Set internet di vs code :
+npm config set proxy http://172.23.202.55:80
+npm config set https-proxy http://172.23.202.55:80
+
 
 Step 1: Download Node.js
 Download the latest release of Node.js from: Nodejs downloads page. I have downloaded Node.js for Windows  Windows (x86)/ 64-bit and the filename is: node-v8.11.4 msi
