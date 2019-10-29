@@ -20,6 +20,7 @@ REDUX STEP :
 3. npm install --save redux react-redux redux-thunk redux-logger react-router-dom axios
 4. npm install --save react-redux-loading-bar
 5. npm start
+6. format (shift alt f) 
 
 
 TEST Internet Connection di terminal:
