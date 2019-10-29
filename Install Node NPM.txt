@@ -18,7 +18,7 @@ REDUX STEP :
 1. npm install --save redux react-redux redux-thunk axios or yarn add redux react-redux redux-thunk axios
 2. npm i --save redux-logger
 3. npm install --save redux react-redux redux-thunk redux-logger react-router-dom axios
-4. npm install --save react-redux-loading-bar
+4. npm install react-redux-spinner --save
 5. npm start
 6. format (shift alt f) 
 
