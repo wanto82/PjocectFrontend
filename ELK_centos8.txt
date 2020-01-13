@@ -1,0 +1,48 @@
+kibana :
+.\bin\kibana
+http://127.0.0.1:5601/app/kibana#/management/kibana/index?_g=()
+
+elasticsearch :
+running di services
+http://127.0.0.1:9200/
+
+
+C:\ProgramData\filebeat\
+
+logstash :
+rename logstash-sample.conf : logstash.conf
+.\bin\logstash.bat -f .\config\logstash.conf
+jika gagal run logstash : hapus semua data di : C:\logstash-7.4.0\data
+The problem is solved now. I had to empty the contents of the data directory of logstash. I then restarted it and it generated the uuid and other files it needed.
+
+tasklist
+Taskkill /PID 7140 /F
+
+
+1. Go to Type here to search
+2. Type into the search textbox Turn Windows features on or off
+3. Make sure both Hyper-V and Windows Sandbox are unchecked/disabled
+4. If the system requires a restart, perform the restart.
+5. Restart a second time to ensure all Hyper-V features are disabled
+
+Centos :
+1. setting bios, F10, configuration : disabled
+2. virtualBox :
+	Machine, new, set memory : 2gb, pilih VDI/Harddisk, set storage : 30gb, selesai
+	setting, storage, set clik add : pilih centos8, seting adapter network : pilik bridge, selesai
+	start, continue, pilih storage, setting user & pass, close VirtualBox :power off (penting: jangan di reboot), selesai
+	start, F12, pilih disk, enter, pilih license, selesai
+3. setting network:
+	su root
+	cd /etc/sysconfig/network-scripts
+	chmod 755 ifcfg-enp0s3 (setting not readonnly file)
+	vi /etc/sysconfig/network-scripts/ifcfg-enp0s3
+	ubah BOOTPROTO=none, ONBOOT=yes, IPADDR=ip.., NETMASK=ip.., GATEWAY=ip..
+	vi /etc/resolv.conf
+	tambahkan nameserver ip.., nameserver ip..
+	reboot atau systemctl restart NetworkManager
+	F12
+4. test network :
+	ping www.google.co.id
+	https://pekoktenan.wordpress.com/2012/03/15/tutorial-grep/
+	
